@@ -21,7 +21,7 @@
     android:key="vibration_intensity">
 
     <!-- notification vibration intensity -->
-    <com.awaken.support.preferences.CustomSeekBarPreference
+    <com.lessaosp.support.preferences.CustomSeekBarPreference
         android:key="notification_vibration_intensity"
         android:title="@string/notification_vibration_intensity_title"
         android:order="-123"
@@ -31,7 +31,7 @@
         settings:units=""/>
 
     <!-- ring vibration intensity -->
-    <com.awaken.support.preferences.CustomSeekBarPreference
+    <com.lessaosp.support.preferences.CustomSeekBarPreference
         android:key="ring_vibration_intensity"
         android:title="@string/ring_vibration_intensity_title"
         android:order="-122"
@@ -41,7 +41,7 @@
         settings:units=""/>
 
     <!-- haptic feedback vibration intensity -->
-    <com.awaken.support.preferences.CustomSeekBarPreference
+    <com.lessaosp.support.preferences.CustomSeekBarPreference
         android:key="haptic_feedback_intensity"
         android:title="@string/haptic_feedback_intensity_title"
         android:order="-121"

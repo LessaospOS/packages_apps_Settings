@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.awaken.fragments;
+package com.android.settings.lessaosp.fragments;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
@@ -29,8 +29,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.awaken.support.colorpicker.ColorPickerPreference;
-import com.awaken.support.preferences.CustomSeekBarPreference;
+import com.lessaosp.support.colorpicker.ColorPickerPreference;
+import com.lessaosp.support.preferences.CustomSeekBarPreference;
 
 import java.lang.Math;
 
@@ -93,7 +93,7 @@ public class MonetSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AWAKEN;
+        return MetricsProto.MetricsEvent.LESSAOSP;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

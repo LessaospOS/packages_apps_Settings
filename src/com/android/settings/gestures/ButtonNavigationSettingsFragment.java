@@ -61,7 +61,7 @@ public class ButtonNavigationSettingsFragment extends DashboardFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AWAKEN;
+        return MetricsProto.MetricsEvent.LESSAOSP;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

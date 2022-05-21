@@ -39,7 +39,7 @@ import com.android.settings.sound.VibrationIntensityController;
 import com.android.settings.Utils;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.awaken.support.preferences.CustomSeekBarPreference;
+import com.lessaosp.support.preferences.CustomSeekBarPreference;
 
 /**
  * This class allows choosing a custom vibration intensity

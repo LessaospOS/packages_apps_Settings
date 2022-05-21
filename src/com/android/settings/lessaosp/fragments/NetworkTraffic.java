@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.awaken.fragments;
+package com.android.settings.lessaosp.fragments;
 
 import android.os.Bundle;
 import android.provider.Settings;
@@ -31,8 +31,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.awaken.support.preferences.SystemSettingListPreference;
-import com.awaken.support.preferences.SystemSettingSeekBarPreference;
+import com.lessaosp.support.preferences.SystemSettingListPreference;
+import com.lessaosp.support.preferences.SystemSettingSeekBarPreference;
 
 public class NetworkTraffic extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -65,6 +65,6 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AWAKEN;
+        return MetricsProto.MetricsEvent.LESSAOSP;
     }
 }

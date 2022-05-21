@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.awaken.fragments;
+package com.android.settings.lessaosp.fragments;
 
 import android.os.Bundle;
 
@@ -41,6 +41,6 @@ public class BrightnessSliderSettings extends SettingsPreferenceFragment impleme
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AWAKEN;
+        return MetricsProto.MetricsEvent.LESSAOSP;
     }
 }

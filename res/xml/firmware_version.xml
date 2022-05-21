@@ -30,21 +30,21 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Awaken version -->
+    <!-- Lessaosp version -->
     <Preference
-        android:key="awaken_version"
-        android:title="@string/awaken_version"
+        android:key="lessaosp_version"
+        android:title="@string/lessaosp_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.AwakenVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.LessaospVersionPreferenceController"/>
 
-    <!-- Awaken maintainer -->
+    <!-- Lessaosp maintainer -->
     <Preference
         android:key="maintainer"
         android:title="@string/maintainer"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.awaken.AwakenMaintainerPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.lessaosp.LessaospMaintainerPreferenceController"/>
 
     <!-- Security patch -->
     <Preference

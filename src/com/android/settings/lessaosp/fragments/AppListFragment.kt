@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.awaken.fragments
+package com.android.settings.lessaosp.fragments
 
 import android.content.Context
 import android.content.pm.PackageInfo

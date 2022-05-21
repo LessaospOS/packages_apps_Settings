@@ -23,7 +23,7 @@
         android:key="battery_style_category"
         android:title="@string/battery_style_category_title" >
 
-        <com.awaken.support.preferences.SystemSettingListPreference
+        <com.lessaosp.support.preferences.SystemSettingListPreference
             android:key="status_bar_battery_style"
             android:title="@string/status_bar_battery_style_title"
             android:summary="%s"
@@ -32,7 +32,7 @@
             android:entryValues="@array/status_bar_battery_style_values"
             android:defaultValue="0" />
 
-        <com.awaken.support.preferences.SystemSettingListPreference
+        <com.lessaosp.support.preferences.SystemSettingListPreference
             android:key="status_bar_show_battery_percent"
             android:title="@string/battery_percent_title"
             android:dialogTitle="@string/battery_percent_title"
@@ -41,7 +41,7 @@
             android:defaultValue="0" />
 
         <!-- QS Battery estimates -->
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="qs_show_battery_estimate"
             android:title="@string/qs_show_battery_estimate_title"
             android:summaryOn="@string/qs_show_battery_estimate_summary_on"
@@ -58,7 +58,7 @@
 	    android:key="clock_settings"
             android:title="@string/clocksettings_title"
             android:summary="@string/clocksettings_summary"
-            android:fragment="com.android.settings.awaken.fragments.ClockSettings" />
+            android:fragment="com.android.settings.lessaosp.fragments.ClockSettings" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -75,38 +75,38 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
-    <com.awaken.support.preferences.SecureSettingSwitchPreference
+    <com.lessaosp.support.preferences.SecureSettingSwitchPreference
         android:key="show_combined_status_bar_signal_icons"
         android:title="@string/combined_status_bar_signal_icons"
         android:summary="@string/combined_status_bar_signal_icons_summary"
         android:defaultValue="false" />
 
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="show_fourg_icon"
             android:title="@string/show_fourg_icon_title"
             android:summary="@string/show_fourg_icon_summary"
             android:defaultValue="false"/>
 
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="use_old_mobiletype"
             android:title="@string/use_old_mobiletype_title"
             android:summary="@string/use_old_mobiletype_summary"
             android:defaultValue="true" />
 
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="data_disabled_icon"
             android:title="@string/data_disabled_icon_title"
             android:summary="@string/data_disabled_icon_summary"
             android:defaultValue="true"/>
 
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="roaming_indicator_icon"
             android:title="@string/roaming_indicator_icon_title"
             android:summary="@string/roaming_indicator_icon_summary"
             android:defaultValue="true"/>
 
         <!-- Location privacy indicator -->
-        <com.awaken.support.preferences.SecureSettingSwitchPreference
+        <com.lessaosp.support.preferences.SecureSettingSwitchPreference
             android:key="enable_location_privacy_indicator"
             android:title="@string/location_privacy_indicator_title"
             android:summaryOn="@string/location_privacy_indicator_summary_on"
@@ -119,30 +119,30 @@
         android:title="@string/quicksettings_category_title">
 
         <!-- qs brightness customization -->
-        <com.awaken.support.preferences.SecureSettingMasterSwitchPreference
+        <com.lessaosp.support.preferences.SecureSettingMasterSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_show_brightness_title"
             android:summary="@string/qs_show_brightness_summary"
-            android:fragment="com.android.settings.awaken.fragments.BrightnessSliderSettings"
+            android:fragment="com.android.settings.lessaosp.fragments.BrightnessSliderSettings"
             android:defaultValue="true" />
 
         <!-- Network Traffic -->
-        <com.awaken.support.preferences.SystemSettingMasterSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingMasterSwitchPreference
             android:key="network_traffic_state"
             android:title="@string/network_traffic_state_title"
             android:summary="@string/network_traffic_state_summary"
-            android:fragment="com.android.settings.awaken.fragments.NetworkTraffic"
+            android:fragment="com.android.settings.lessaosp.fragments.NetworkTraffic"
             android:defaultValue="false" />
 
         <!-- Haptic Feedback on qs tiles -->
-        <com.awaken.support.preferences.SecureSettingSwitchPreference
+        <com.lessaosp.support.preferences.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="true"/>
 
         <!-- QS footer warnings -->
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_warnings"
             android:title="@string/qs_footer_warnings_title"
             android:summary="@string/qs_footer_warnings_summary"
@@ -154,18 +154,18 @@
         android:title="@string/ambientsettings_category_title">
 
         <!-- AOD on charge -->
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="doze_on_charge"
             android:defaultValue="false"
             android:title="@string/doze_on_charge_title"
             android:summary="@string/doze_on_charge_summary" />
 
         <!-- Pulse notifications lightning -->
-        <com.awaken.support.preferences.SystemSettingMasterSwitchPreference
+        <com.lessaosp.support.preferences.SystemSettingMasterSwitchPreference
             android:key="pulse_ambient_light"
             android:title="@string/pulse_ambient_light_title"
             android:summary="@string/pulse_ambient_light_summary"
-            android:fragment="com.android.settings.awaken.fragments.EdgeLightningSettings"
+            android:fragment="com.android.settings.lessaosp.fragments.EdgeLightningSettings"
             android:defaultValue="false" />
     </PreferenceCategory>
 </PreferenceScreen>

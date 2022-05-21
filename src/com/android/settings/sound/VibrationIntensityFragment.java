@@ -34,7 +34,7 @@ public class VibrationIntensityFragment extends DashboardFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.AWAKEN;
+        return MetricsEvent.LESSAOSP;
     }
 
     @Override

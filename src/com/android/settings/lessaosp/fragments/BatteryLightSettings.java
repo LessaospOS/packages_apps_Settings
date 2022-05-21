@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.awaken.fragments;
+package com.android.settings.lessaosp.fragments;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -30,8 +30,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.awaken.support.preferences.SystemSettingSwitchPreference;
-import com.awaken.support.colorpicker.ColorPickerPreference;
+import com.lessaosp.support.preferences.SystemSettingSwitchPreference;
+import com.lessaosp.support.colorpicker.ColorPickerPreference;
 
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -101,7 +101,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AWAKEN;
+        return MetricsProto.MetricsEvent.LESSAOSP;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

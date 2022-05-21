@@ -21,7 +21,7 @@
     android:key="button_navigation_settings_page"
     android:title="@string/button_settings_activity_title">
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.lessaosp.support.preferences.SystemSettingSwitchPreference
         android:key="navigation_bar_inverse"
         android:title="@string/navigation_bar_inverse_title"
         android:summary="@string/navigation_bar_inverse_summary"

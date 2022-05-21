@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.settings.awaken.fragments
+package com.android.settings.lessaosp.fragments
 
 import com.android.internal.logging.nano.MetricsProto
 import com.android.settings.dashboard.DashboardFragment
 
-abstract class AwakenDashboardFragment: DashboardFragment() {
-    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.AWAKEN
+abstract class LessaospDashboardFragment: DashboardFragment() {
+    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.LESSAOSP
 }

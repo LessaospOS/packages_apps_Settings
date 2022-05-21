@@ -30,17 +30,17 @@ import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.slices.Sliceable;
 
-public class AwakenVersionPreferenceController extends BasePreferenceController {
+public class LessaospVersionPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "awakenVersionDialogCtrl";
+    private static final String TAG = "lessaospVersionDialogCtrl";
 
-    private static final String KEY_AWAKEN_VERSION_PROP = "ro.awaken.base.version";
-    private static final String KEY_AWAKEN_CODENAME_PROP = "ro.awaken.base.codename";
-    private static final String KEY_AWAKEN_ZIPTYPE_PROP = "ro.awaken.ziptype";
+    private static final String KEY_LESSAOSP_VERSION_PROP = "ro.lessaosp.base.version";
+    private static final String KEY_LESSAOSP_CODENAME_PROP = "ro.lessaosp.base.codename";
+    private static final String KEY_LESSAOSP_ZIPTYPE_PROP = "ro.lessaosp.ziptype";
 
     private final PackageManager mPackageManager;
 
-    public AwakenVersionPreferenceController(Context context, String preferenceKey) {
+    public LessaospVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
         mPackageManager = mContext.getPackageManager();
     }
@@ -62,16 +62,16 @@ public class AwakenVersionPreferenceController extends BasePreferenceController 
 
     @Override
     public CharSequence getSummary() {
-        String awakenVersion = SystemProperties.get(KEY_AWAKEN_VERSION_PROP,
+        String lessaospVersion = SystemProperties.get(KEY_LESSAOSP_VERSION_PROP,
                 mContext.getString(R.string.unknown));
-        String awakenCodename = SystemProperties.get(KEY_AWAKEN_CODENAME_PROP,
+        String lessaospCodename = SystemProperties.get(KEY_LESSAOSP_CODENAME_PROP,
                 mContext.getString(R.string.unknown));
-        String awakenZiptype =  SystemProperties.get(KEY_AWAKEN_ZIPTYPE_PROP,
+        String lessaospZiptype =  SystemProperties.get(KEY_LESSAOSP_ZIPTYPE_PROP,
                 mContext.getString(R.string.unknown));
-        if (!awakenVersion.isEmpty())
-            return awakenVersion + " | " + awakenCodename + " | " + awakenZiptype;
+        if (!lessaospVersion.isEmpty())
+            return lessaospVersion + " | " + lessaospCodename + " | " + lessaospZiptype;
         else
-            return mContext.getString(R.string.awaken_version_default);
+            return mContext.getString(R.string.lessaosp_version_default);
     }
 
     @Override
@@ -82,7 +82,7 @@ public class AwakenVersionPreferenceController extends BasePreferenceController 
 
         final Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(mContext.getString(R.string.awaken_uri)));
+        intent.setData(Uri.parse(mContext.getString(R.string.lessaosp_uri)));
         if (mPackageManager.queryIntentActivities(intent, 0).isEmpty()) {
             // Don't send out the intent to stop crash
             Log.w(TAG, "queryIntentActivities() returns empty");
@@ -96,6 +96,6 @@ public class AwakenVersionPreferenceController extends BasePreferenceController 
     @Override
     public void copy() {
         Sliceable.setCopyContent(mContext, getSummary(),
-                mContext.getText(R.string.awaken_version));
+                mContext.getText(R.string.lessaosp_version));
     }
 }

@@ -23,7 +23,7 @@
         app:lottie_rawRes="@raw/gesture_ambient_tap"
         app:preview="@drawable/gesture_ambient_tap" />
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.lessaosp.support.preferences.SystemSettingSwitchPreference
         android:key="doze_trigger_doubletap"
         android:defaultValue="false"
         android:title="@string/doze_double_tap_title"

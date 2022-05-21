@@ -100,7 +100,7 @@
         settings:controller="com.android.settings.gestures.VolumeButtonMusicControlPreferenceController"
         android:dependency="volume_rocker_wake" />
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.lessaosp.support.preferences.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"
         android:title="@string/volume_rocker_wake_title"
         android:summary="@string/volume_rocker_wake_summary"
@@ -108,7 +108,7 @@
         android:disableDependentsState="true" />
 
     <!-- Torch gesture -->
-    <com.awaken.support.preferences.SystemSettingListPreference
+    <com.lessaosp.support.preferences.SystemSettingListPreference
         android:key="torch_power_button_gesture"
         android:dialogTitle="@string/torch_power_button_gesture_title"
         android:title="@string/torch_power_button_gesture_title"
@@ -123,21 +123,21 @@
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
         settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
 
-    <com.awaken.support.preferences.SecureSettingSwitchPreference
+    <com.lessaosp.support.preferences.SecureSettingSwitchPreference
         android:key="advanced_reboot"
         android:title="@string/global_actions_advanced_reboot_title"
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="true" />
 
     <!-- Double tap to sleep -->
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.lessaosp.support.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:summary="@string/double_tap_sleep_gesture_summary"
         android:defaultValue="true" />
 
     <!-- Swap volume buttons -->
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.lessaosp.support.preferences.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
         android:summary="@string/swap_volume_buttons_summary"

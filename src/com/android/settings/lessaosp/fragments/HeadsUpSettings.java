@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.awaken.fragments;
+package com.android.settings.lessaosp.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -40,8 +40,8 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.awaken.support.preferences.PackageListAdapter;
-import com.awaken.support.preferences.PackageListAdapter.PackageItem;
+import com.lessaosp.support.preferences.PackageListAdapter;
+import com.lessaosp.support.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -165,13 +165,13 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AWAKEN;
+        return MetricsProto.MetricsEvent.LESSAOSP;
     }
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
         if (dialogId == DIALOG_STOPLIST_APPS || dialogId == DIALOG_BLACKLIST_APPS) {
-            return MetricsProto.MetricsEvent.AWAKEN;
+            return MetricsProto.MetricsEvent.LESSAOSP;
         }
         return 0;
     }

@@ -70,7 +70,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.TwoTargetPreference;
-import com.android.internal.util.awaken.AwakenUtils;
+import com.android.internal.util.lessaosp.LessaospUtils;
 
 /**
  * The Settings screen for WifiDisplay configuration and connection management.
@@ -312,7 +312,7 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
                      SystemProperties.set("persist.wfd.legacy.video.mode",
                                               String.valueOf(mLegacyVideoMode));
                 } catch(Exception e) { }
-                if (!AwakenUtils.isPackageInstalled(getPrefContext(), "com.qualcomm.wfd.service")) {
+                if (!LessaospUtils.isPackageInstalled(getPrefContext(), "com.qualcomm.wfd.service")) {
                     preferenceScreen.addPreference(lp);
                 }
             }

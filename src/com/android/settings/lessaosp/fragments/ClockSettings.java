@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.awaken.fragments;
+package com.android.settings.lessaosp.fragments;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -283,7 +283,7 @@ public class ClockSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.AWAKEN;
+        return MetricsEvent.LESSAOSP;
     }
 
     /**

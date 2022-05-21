@@ -72,8 +72,8 @@ public class SoundSettingsTest extends InstrumentationTestCase {
     }};
 
     private HashMap alarmSounds = new HashMap<String, String>() {{
-        put("angler","Awaken");
-        put("bullhead","Awaken");
+        put("angler","Lessaosp");
+        put("bullhead","Lessaosp");
         put("marlin","Bounce");
         put("sailfish","Bounce");
         put("walleye","Cuckoo clock");

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.deviceinfo.awaken;
+package com.android.settings.deviceinfo.lessaosp;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -25,11 +25,11 @@ import androidx.preference.Preference;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class AwakenMaintainerPreferenceController extends BasePreferenceController {
+public class LessaospMaintainerPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "AwakenMaintainerPreferenceController";
+    private static final String TAG = "LessaospMaintainerPreferenceController";
 
-    public AwakenMaintainerPreferenceController(Context context, String key) {
+    public LessaospMaintainerPreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -38,7 +38,7 @@ public class AwakenMaintainerPreferenceController extends BasePreferenceControll
     }
 
     public CharSequence getSummary() {
-        String maintainer = mContext.getResources().getString(R.string.awaken_maintainer);
+        String maintainer = mContext.getResources().getString(R.string.lessaosp_maintainer);
         return maintainer;
     }
 }

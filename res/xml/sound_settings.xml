@@ -90,7 +90,7 @@
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
     <!-- Link ringtone and notification volumes -->
-    <com.awaken.support.preferences.SecureSettingSwitchPreference
+    <com.lessaosp.support.preferences.SecureSettingSwitchPreference
         android:key="volume_link_notification"
         android:title="@string/volume_link_notification_title"
         android:defaultValue="true"
@@ -98,7 +98,7 @@
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
     <!-- Increasing ring -->
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.lessaosp.support.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"
         android:title="@string/increasing_ring_volume_option_title"
         android:defaultValue="false"
@@ -295,14 +295,14 @@
         android:key="screenshot_shutter_sound"
         android:title="@string/screenshot_shutter_sound_title" />
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.lessaosp.support.preferences.SystemSettingSwitchPreference
         android:key="show_app_volume"
         android:title="@string/app_volume_title"
         android:summary="@string/app_volume_summary"
         android:defaultValue="false"
         android:order="-5"/>
 
-    <com.awaken.support.preferences.GlobalSettingListPreference
+    <com.lessaosp.support.preferences.GlobalSettingListPreference
         android:key="ringtone_focus_mode"
         android:title="@string/ringtone_focus_mode_title"
         android:entries="@array/ringtone_focus_mode_entries"
@@ -313,17 +313,17 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-         <com.awaken.support.preferences.SystemSettingSwitchPreference
+         <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-         <com.awaken.support.preferences.SystemSettingSwitchPreference
+         <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-         <com.awaken.support.preferences.SystemSettingSwitchPreference
+         <com.lessaosp.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
